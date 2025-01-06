@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Titan+One&family=Quicksand:wght@300&family=Raleway:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('gambar/background3.avif'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
+        h1 {
+            font-family: "Titan One", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #295a9b;
+            font-size: 22px;
+        }
+        h3{
+            font-family: "Titan One", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            text-align: center;
+        }
+        h6{
+            font-family: "Poppins", serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 15px;
+            color: rgb(87, 87, 87);
+        }
+        p, .gallery-2 {
+            text-align: justify;
+            font-size: 13px;
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;  
+        }
+        .gallery-1{
+            font-family: 'Arial', sans-serif; 
+        }
+        .carousel {
+            margin: 20px auto; 
+            width: 70%; 
+            max-width: 1200px; 
+        }
+        .carousel-inner img {
+            border-radius: 10px; 
+            object-fit: cover; 
+        }
+        @media (max-width: 1024px){
+            h1{
+                font-size: 24px;
+            }
+            h3{
+                font-size: 18px;
+            }
+            h6{
+                font-size: 17px;
+            }
+            p, .gallery-2{
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 768px){
+            .carousel {
+                width: 95%; 
+            }
+            .carousel-caption {
+                padding: 10px;
+            }
+            h1{
+                font-size: 22px;
+            }
+            h3{
+                font-size: 16px;
+            }
+            h6{
+                font-size: 15px;
+            }
+            p, .gallery-2{
+                font-size: 13px;
+            }
+        }
+        @media (max-width: 480px){
+            h1{
+                font-size: 22px;
+            }
+            h3{
+                font-size: 16px;
+            }
+            h6{
+                font-size: 15px;
+            }
+            p, .gallery-2{
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <p class="gallery-1">Portofolio Pribadi</p>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+        <div>
+            <ul id="nav-menu">
+                <li><a href="index.html">Utama</a></li>
+                <li><a href="about.html">Profil</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container-fluid mt-3">
+        <h1>Kumpulan Hasil Proyek/Karya</h3>
+        <br>
+    </div>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="gambar/proyek.png" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="gambar/proyek 1.png" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="gambar/proyek 2.png" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="gambar/proyek 3.png" class="d-block" style="width:100%">
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    
+    <div class="container-fluid mt-3">
+        <h3>Deskripsi proyek yang telah saya selesaikan</h3>
+        <ol>
+            <li><h6>Poter Publik</h6></li>
+            <p>Tugas proyek akhir mata kuliah Grafika Komputer. Tugas dilakukan secara berkelompok dengan anggota 2 orang. Saya memiliki bagian tugas pembuatan poster di software Corel Draw.</p>
+            <ul>
+                <li class="gallery-2">Mendesain elemen grafis seperti icon, ilustrasi, dan layout dasar.</li>
+                <li class="gallery-2">Mengatur tata letak teks agar mudah dibaca dan menarik.</li>
+                <br>
+            </ul>
+            <li><h6>Desain 3 Bentuk Dasar</h6></li>
+            <p>Tugas poster pada software Adobe Photoshop dengan mengembangkan kreativitas 3 bentuk dasar (rectangle, ellipse, atau polygon) menggunakan teknik fill dan stroke.</p>
+            <li><h6>Poster Promosi</h6></li>
+            <p>Tugas poster promosi EXPO Kampus Pameran Final Project Mahasiswa yang mencerminkan pemahaman tentang teori Nirmana, Tipografi, dan teknik masking.</p>
+        </ol>
+    </div>
+
+    <footer>
+        <div>
+            <div class="footer">&copy; 2024 Erika Puji Suhartanti. All Rights Reserved.</div>
+            <div class="links">
+                <a href="#">Email | erikapuji74@gmail.com</a>
+                <a href="https://www.instagram.com/_errikaa.p?igsh=ZDVscjA2NGo0OWVz">Instagram</a>
+                <a href="https://www.linkedin.com/in/erika-puji-suhartanti-39bb4927a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+            </div>
+        </div>
+    </footer>    
+    <script src="script.js"></script>
+</body>
+</html>
